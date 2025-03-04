@@ -1,6 +1,6 @@
-from flask import Blueprint, jsonify, request
-from flask_httpauth import HTTPTokenAuth
-from app.models import User
+from flask import Blueprint, jsonify, request # type: ignore
+from flask_httpAuth import HTTPTokenAuth # type: ignore
+from models import User
 from app import db
 
 # Created a Blueprint for authentication routes. 

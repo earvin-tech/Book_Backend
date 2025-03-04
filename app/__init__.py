@@ -1,10 +1,12 @@
-from flask import Flask
-from flask_sqlalchemy import SQLAlchemy
-from flask_login import LoginManager
-from flask_migrate import Migrate
+from flask import Flask # type: ignore
+from flask_sqlalchemy import SQLAlchemy # type: ignore
+from flask_marshmallow import Marshmallow # type: ignore
+from flask_login import LoginManager # type: ignore
+from flask_migrate import Migrate # type: ignore
 from config import Config
 
 db = SQLAlchemy()
+ma = Marshmallow()
 migrate = Migrate()
 login = LoginManager()
 

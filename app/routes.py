@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, jsonify, request # type: ignore
 from app.models import Book, db
 
 bp = Blueprint('books', __name__)
